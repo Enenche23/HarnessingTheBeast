@@ -1,4 +1,7 @@
 #  Madara और Starknet Appchains
+**Jul 20,2023** ·1 min read
+
+
 ###  कैसे Madara blockchain infrastructure का भविष्य बदल रहा है 
 
 ##  संक्षेप में: 
@@ -6,8 +9,9 @@
 - Substrate framework का इस्तेमाल करके, Madara Cairo VM की शक्तियों  को बढ़ता है, जो provable, secure और flexible programs की तरफ ले जाता है.
 - इसको इस्तेमाल करने से कई फायदे मिलते हैं, जैसे की scalable infrastructure, ज़्यादा throughput और applications पर नियंत्रण.
 - Madara की विशेषताओं में on-chain privacy का सपोर्ट, अलग अलग chains के बीच आसान interoperability, और मज़बूत execution शामिल है. 
-- Madara dApp बनाने की दुनिया में एक नया रास्ता बना रही है, blockchain के क्षेत्र में सस्ता, scalable और customizable solution प्रदान करके. 
+- Madara dApp बनाने की दुनिया में एक नया रास्ता बना रही है, blockchain के क्षेत्र में सस्ता, scalable और customizable solution प्रदान करके.
 
+## Introduction परिचय
 सोचो अगर आप अपनी application की ज़रूरतों  के हिसाब से एक blockchain बना सकते – appchains आपको यही करने का मौका देते हैं. Appchains application-specific blockchain होते हैं जो developers को blockchain के कई पहलुओं को अपनी application की ज़रूरतों के हिसाब से चयन करने का मौका देते हैं, चाहे वो एक अलग hash function हो या फिर एक consensus algorithm. और सबसे अच्छी बात? appchains जिस भी L2 या L1 के ऊपर बने हैं, उसकी security को प्राप्त (inherit) करते हैं. ऐसे में, developers को दोनों के फायदे उठा सकते हैं. 
 
 पेश है, Madara, एक नया sequencer जो खेल बदल देगा, Madara flexible भी है और तेज़ भी. Sequencers transactions को execute करके उनको batches में group करते हैं.  अपने खुद के Starknet appchain को लॉन्च करने के लिए एक गेटवे के रूप में काम करते हुए, Madara ने Starknet ecosystem में प्रयोग के लिए संभावनाओं का एक क्षेत्र खोल दिया, जैसा पहले कभी नहीं था. 
@@ -33,7 +37,9 @@ Appchains की customizability developers को ऐसे features के स
 - Settlement: एक Validity Rollup के तौर पर, Madara appchains के state को सिर्फ settlement layer को देख (examine) करके किआ जा सकता है. Starknet ल२ पर ज़्यादा बार settlement होने से, एक L3 appchains जल्दी से hard finality पा सकता है, जबकि Sequencing layer को decentralize करने से सख्त soft finality मिलती है. इस तरह, settlement दोनों तरफ से (hard और soft finality) सुधर जाती है. 
 - Sequencing: Madara Sequencing की ज़िम्मेदारी उठाता है, जो की application की ज़रूरत के अनुसार modify किआ जा सकता है - चाहे वो FCFS हो, PGA हो या फिर Narwhall & Bullshark जैसी कठिन scheme हो. कुछ appchains encrypted mempools को deploy करने का चयन कर सकते हैं ताकि fair ordering को सुनिश्चित किया जा सके और MEV का असर काम हो सके.
 - Data Availability: Data Availability पूरे state tree को accessible रखने की गारंटी देता है, दोनों  को विश्वास रहे की वो अपने assets की ownership को साबित कर सकें, अगर कभी Madara में दिक्कत आये तब भी. Madara developers को अलग अलग data Availability schemes में से चुनने की सुविधा देगा.
-- Governance: हर Madara appchain अपनी governance model choose कर सकता है. [SnapshotX](https://twitter.com/SnapshotLabs) एक fully on-chain governance का option देता है जो Storage Proofs पर निर्भर है. दुसरे governance mechanisms भी exploration में हैं, जैसे की native Substrate governance pallet .On-chain governance Madara के लिए एक core value है.  
+- Governance: हर Madara appchain अपनी governance model choose कर सकता है. [SnapshotX](https://twitter.com/SnapshotLabs) एक fully on-chain governance का option देता है जो Storage Proofs पर निर्भर है. दुसरे governance mechanisms भी exploration में हैं, जैसे की native Substrate governance pallet .On-chain governance Madara के लिए एक core value है. 
+
+![alt madara](/images/madara.png)
 
 ## Madara
 Madara में, Cairo VM को Substrate framework का इस्तेमाल करके निखारा गया है. Substrate एक open-source Rust framework है जिसे customizable blockchains बनाने के लिए इस्तेमाल किआ जा सकता है, जो अपनी flexibility के लिए जाना जाता है. वहीँ, Cairo VM को इस मकसद से बनाया गया है की वो Validity Proofs efficiently generate कर सके. State tracking और smart contracts (Proofs को L2 पर verify करने के लिए) का इस्तेमाल करके, appchains Starknet के साथ integration सुनिश्चित कर सकता है. इस तरीके से, Madara Cairo का इस्तेमाल program execution की provability को सक्षम करने के लिए करता है. 
